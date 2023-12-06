@@ -219,4 +219,5 @@
 		height: 1.5rem;
 		display: inline-block;
 	}
+	 
 </style>

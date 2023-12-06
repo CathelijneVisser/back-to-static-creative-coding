@@ -93,4 +93,5 @@
     .control--right{
         right: 0;
     }
+    
 </style>
