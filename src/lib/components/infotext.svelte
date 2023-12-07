@@ -31,10 +31,10 @@
 		left: calc(-1 * var(--borderWidth));
 		height: calc(100% + var(--borderWidth) * 2);
 		width: calc(100% + var(--borderWidth) * 2);
-		background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+		background: linear-gradient(60deg, #b92b27, #1565C0);
   		border-radius: calc(2 * var(--borderWidth));
 		z-index: -1;
-		animation: gradient 3s ease alternate infinite;
+		animation: gradient 6s ease alternate infinite;
 		background-size: 400%;
 	}
 

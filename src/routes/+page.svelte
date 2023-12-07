@@ -512,9 +512,29 @@
 		background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
   		border-radius: calc(2 * var(--borderWidth));
 		z-index: -1;
-		animation: gradient 3s ease alternate infinite;
+		animation: gradient 6s ease alternate infinite;
 		background-size: 400%;
 	}
+	.box-3::after {
+		background: linear-gradient(60deg, #bdc3c7, #2c3e50);
+  		
+	}
+
+	.box-4::after {
+		background: linear-gradient(60deg, #2980B9, #6DD5FA, #FFFFFF);
+  		
+	}
+
+	.more::after {
+		background: linear-gradient(60deg, #1E9600, #FFF200, #FF0000);
+  		
+	}
+
+	.grafiek::after {
+		background: linear-gradient(60deg, #108dc7, #ef8e38);
+  		
+	}
+
 
 	@keyframes gradient {
 		0% {
