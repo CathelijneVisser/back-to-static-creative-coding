@@ -59,13 +59,16 @@
 {/if}
 <button on:click={ToggleMenu}>SHOW MENU</button>
 
-<main>
+<div>
 	<slot />
-</main>
+</div>
 
 <footer />
 
 <style>
+	header {
+		display: none;
+	}
     /* Proxima font */
     @font-face {
     font-family: 'Proxima';
