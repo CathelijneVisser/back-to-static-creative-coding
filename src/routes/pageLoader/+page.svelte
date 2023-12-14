@@ -5,18 +5,23 @@
     gsap.registerPlugin(Draggable);
 
     onMount(async () => {
-        // gsap.from(".ufo", { rotation: 30, duration: 2, repeat: -1, ease: "none",})
+        const tl = gsap.timeline({repeat: -1, yoyo: true, onRepeat: () => {tl.invalidate()}});
 
-        let x = 0
+        tl.to(".ufo", {rotate: "30", duration: 3, ease: "none"})
+        tl.to(".ufo", {rotate: "-30", duration: 3, ease: "none"})
 
         Draggable.create(".ufo", { 
             type: "x,y", 
-            onDragEnd: function(e) { 
-                if (this.hitTest(".ufo", ".astronaut")) {              
-                    gsap.from(".astronaut", { rotation: 360, duration: 2, repeat: -1, ease: "none",})
+            onDragEnd: function (e) { 
+                console.log("Waar ga ik heen?")
+                if (this.hitTest(".astronaut")) {    
+                    spin()         
                 }
             }
         })
+        function spin(){
+            gsap.from(".astronaut", { rotation: 360, duration: 2, repeat: -1, ease: "none",})
+        }
 	})
 </script>
 
