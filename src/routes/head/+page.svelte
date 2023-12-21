@@ -3,13 +3,12 @@
 </script>
 
 <svelte:head>
-	<title>Dashboard The Ocean Cleanup</title>
+	<title>Head</title>
 </svelte:head>
 
 <!-- De code voor het hoofd is eerlijk gejat can sanne van t hooft https://github.dev/shooft/your-tribe-profile-card -->
 <main>
 	<div class="grid" />
-	<div class="breath" />
     <header class="head">
           
         <aside class="🌟">
@@ -232,13 +231,6 @@
 	z-index: -1;
 }
 
-.breath {
-	background-color: hsla(0, 50%, 0%, 0.5);
-	width: 10em;
-	height: 3em;
-	border-radius: 3em;
-	z-index: 2;
-}
 
 /****************/
 /****************/
